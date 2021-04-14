@@ -1,2 +1,2 @@
 # test
-test repo for git command demonstration
+echo "this is my first program"
