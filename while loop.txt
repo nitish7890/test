@@ -1,0 +1,66 @@
+                                 while loop
+1.print the numbers 1 to 100 using while loop
+
+#!/bin/bash
+i=1
+while [ $i -le 100 ]
+do 
+    echo $i
+    let i=i+1
+done
+2.Find the factoriacl of any number bu using while loop
+
+echo "enter the value of n"
+read num
+i=1
+while [ $i -le $num ]
+do
+   let fact=fact*i
+   let i=i+1
+done
+echo "factorial of any number is $fact"
+
+3.To print the natural number by using while loop
+
+echo " enter the value of number"
+read num
+i=1
+while [ $i -le $num ]
+do
+   let sum=sum+i
+   let i=i+1
+done
+echo "sum of natural number is $sum"
+
+4.print the fibonacci series by using while loop
+
+echo "How many number of terms to be generated"
+read n
+x=0
+y=1
+i=3
+echo "Fiboncci series up to $n terms "
+echo $x
+echo $y
+while [ $i -le $num ]
+do
+    let z=x+y
+    echo $z
+    a=$b
+    b=$c
+    let i=i+1
+done
+
+5.Print the table of any number
+
+echo "Enter the number"
+read n
+i=1
+while [ $i -le 10 ]
+do
+    echo "$n*%i=$((n*i))"
+    let i=i+1
+done
+
+
+
