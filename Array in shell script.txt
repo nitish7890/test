@@ -1,0 +1,74 @@
+1.BUBBLE SORT
+
+a=(10 8 20 25 12)
+
+for ((i=0;i<5;i++))
+do
+ for((j=0;j<5;j++))
+ do
+if ((${a[j]} > ${a[$((j+1))]}))
+then
+  v=${a[$j]}
+  a[$j]=${a[$((j+1))]}
+  a[$((j+1))]=$v
+    fi
+ done
+done
+    echo ${a[*]}
+    echo "end..."
+2.SELECTION SORT
+
+#!/bin/bash
+echo "enter the number"
+read n
+echo "enter number in an array"
+for((i=0;i<n;i++))
+do
+read arr[$i]
+done
+#logic for selection sort
+for((i=0;i<n-1;i++))
+do
+small=${arr[$i]}
+index=$i
+for((j=i+1;j<n;j++))
+do
+if((arr[j]<small))
+then
+small=${arr[$j]}
+index=$j
+fi
+done
+temp=${arr[$i]}
+arr[$i]=${arr[$index]}
+arr[$index]=$temp
+done
+#printing sorted array
+echo "printing sorted array"
+for((i=0;i<n;i++))
+do
+echo ${arr[$i]}
+done
+
+3.INSERTION SORT
+
+j=0
+for line in $(cat $1)
+do
+        elements[$j]="$line"
+        j=$((j+1))
+done
+
+
+for i in $(seq "${#elements[@]}");
+do
+        key=${elements[i]}
+        echo index: $i Key: $key
+        k=$((i-1))
+        while [ $k -gt 0 ] && [ ${elements[k]} > $key ]; do
+                echo ${elements[k]} $key
+                elements[$((k+1))]=${elements[k]}
+                k=$((k-1))
+        done
+        elements[$((k+1))]=$key
+done
