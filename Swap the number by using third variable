@@ -1,5 +1,5 @@
 import java.util.*;
-public class Swap
+public class Swap     //swap two number by using third variable//
 {
 public static void main(String args[])
 {
