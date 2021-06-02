@@ -15,9 +15,9 @@ public class Geometry2
    x4=in.nextInt();
    y3=in.nextInt();
    y4=in.nextInt();
-  lenght1=Math.sqrt((x2-x1)^2+(y2-y1)^2);
+  lenght1=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 System.out.println("length of the line1=" +lenght1);
-  lenght2=Math.sqrt((x4-x3)^2+(y4-y3)^2);
+  lenght2=Math.sqrt((x4-x3)*(x4-x3)+(y4-y3)*(y4-y3));
 System.out.println("length of the line2=" +lenght2);
 if(lenght1==lenght2)
  {
