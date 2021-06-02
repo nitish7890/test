@@ -11,7 +11,7 @@ public class Geometry
    x2=in.nextInt();
    y1=in.nextInt();
    y2=in.nextInt();
-  lenght=Math.sqrt((x2-x1)^2+(y2-y1)^2);
+  lenght=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 System.out.println("length of the line=" +lenght);
   }
 }
