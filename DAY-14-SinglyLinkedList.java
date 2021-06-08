@@ -87,11 +87,11 @@ public class SinglyLinkedList {
         SinglyLinkedList sList = new SinglyLinkedList();    
             
         //Add nodes to the list    
-        sList.addNode(1);    
-        sList.addNode(2);    
-        sList.addNode(3);    
+        sList.addNode(56);    
+        sList.addNode(30);    
+        sList.addNode(70);    
         sList.addNode(5);    
-        sList.InsertEnd(7);
+        sList.InsertEnd(56);
         //sList.Insert_At_Position(2,12);    
         //Displays the nodes present in the list    
         sList.display();    
