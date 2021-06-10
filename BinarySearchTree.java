@@ -132,12 +132,10 @@ public static class Node{
   
           BinarySearchTree bt = new BinarySearchTree();  
           //Add nodes to the binary tree  
-          bt.insert(50);  
+          bt.insert(56);  
           bt.insert(30);  
           bt.insert(70);  
-          bt.insert(60);  
-          bt.insert(10);  
-          bt.insert(90);  
+          
   
           System.out.println("Binary search tree after insertion:");  
            
